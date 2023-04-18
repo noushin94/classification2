@@ -71,3 +71,11 @@ pred = MLP.predict(Xtest)
 
 print(confusion_matrix(Ytest, pred))
 print(accuracy_score(Ytest, pred))
+
+from sklearn.svm import SVC
+SV_model = SVC(kernel='linear', gamma=0.01, degree=3, C=0.1, class_weight='balanced')
+SV_model.fit(Xtrain, Ytrain)
+pred = SV_model.predict(Xtest)
+
+print(confusion_matrix(Ytest, pred))
+print(accuracy_score(Ytest, pred))
