@@ -41,3 +41,12 @@ pred = KNN.predict(Xtest)
 
 print(confusion_matrix(Ytest, pred))
 print(accuracy_score(Ytest, pred))
+
+from sklearn.tree import DecisionTreeClassifier
+DT = DecisionTreeClassifier(criterion='entropy', max_depth=5, min_samples_split=7, min_samples_leaf=2,
+                            class_weight={0:0.33 , 1:0.33, 2:0.33}, random_state=2)
+DT.fit(Xtrain, Ytrain)
+pred = DT.predict(Xtest)
+
+print(confusion_matrix(Ytest, pred))
+print(accuracy_score(Ytest, pred))
