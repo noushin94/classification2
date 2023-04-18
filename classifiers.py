@@ -50,3 +50,6 @@ pred = DT.predict(Xtest)
 
 print(confusion_matrix(Ytest, pred))
 print(accuracy_score(Ytest, pred))
+
+pred = DT.predict_proba(Xtest)
+pred
