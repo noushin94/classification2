@@ -53,3 +53,11 @@ print(accuracy_score(Ytest, pred))
 
 pred = DT.predict_proba(Xtest)
 pred
+
+from sklearn.tree import export_graphviz
+export_graphviz(DT, out_file="tree.dot",class_names=True,feature_names=X.columns, filled=True)
+
+import graphviz
+with open("tree.dot") as f:
+    dot_graph = f.read()
+graphviz.Source(dot_graph)
