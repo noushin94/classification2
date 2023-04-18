@@ -25,3 +25,19 @@ pred = GNB.predict(Xtest)
 
 print(confusion_matrix(Ytest, pred))
 print(accuracy_score(Ytest, pred))
+
+from sklearn.naive_bayes import MultinomialNB
+MNB = MultinomialNB()
+MNB.fit(Xtrain, Ytrain)
+pred = MNB.predict(Xtest)
+
+print(confusion_matrix(Ytest, pred))
+print(accuracy_score(Ytest, pred))
+
+from sklearn.neighbors import KNeighborsClassifier
+KNN = KNeighborsClassifier(n_neighbors=5, weights='uniform', n_jobs=3)
+KNN.fit(Xtrain, Ytrain)
+pred = KNN.predict(Xtest)
+
+print(confusion_matrix(Ytest, pred))
+print(accuracy_score(Ytest, pred))
