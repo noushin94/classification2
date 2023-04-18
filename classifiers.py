@@ -17,3 +17,11 @@ GNB = GaussianNB()
 GNB.fit(Xtrain, Ytrain)
 pred = GNB.predict(Xtest)
 pred
+
+from sklearn.metrics import confusion_matrix, accuracy_score
+GNB = GaussianNB()
+GNB.fit(Xtrain, Ytrain)
+pred = GNB.predict(Xtest)
+
+print(confusion_matrix(Ytest, pred))
+print(accuracy_score(Ytest, pred))
