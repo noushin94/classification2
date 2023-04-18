@@ -61,3 +61,13 @@ import graphviz
 with open("tree.dot") as f:
     dot_graph = f.read()
 graphviz.Source(dot_graph)
+
+from sklearn.neural_network import MLPClassifier
+MLP = MLPClassifier(max_iter=200, random_state=2020, activation='relu', hidden_layer_sizes=(10,20),
+                    learning_rate_init=0.01, learning_rate='invscaling')
+
+MLP.fit(Xtrain, Ytrain)
+pred = MLP.predict(Xtest)
+
+print(confusion_matrix(Ytest, pred))
+print(accuracy_score(Ytest, pred))
