@@ -9,5 +9,5 @@
 ### in line 8 with  model_selection in  package of scikit learn we can split test and train datas
 ## GaussianNB Classifier
 ### here the model has been fitted with XTrain and YTrain, then it predicts with XTest
-## for evaluating classifier we use accuracy score and confusion Matrix with are available by metrics of scikit learn
-### GaussianNB Classifier has 
+## for evaluating classifier we use accuracy score and confusion Matrix which are available by metrics of scikit learn
+### GaussianNB Classifier has 0.72 accuracy
