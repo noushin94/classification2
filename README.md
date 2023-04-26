@@ -11,3 +11,13 @@
 ### here the model has been fitted with XTrain and YTrain, then it predicts with XTest
 ## for evaluating classifier we use accuracy score and confusion Matrix which are available by metrics of scikit learn
 ### GaussianNB Classifier has 0.72 accuracy
+## MultinomialNB Classifier
+### here again the model has been fitted then it predicts with XTest
+### the accuracy of this Classifier is approximately 0.60
+## KNN Classifier
+### this model has 0.68 accuracy
+## DecisionTreeClassifier
+###  this model has 0.74 accuracy 
+### in line 55 I used predict_proba to see the probability of both positive Diabetes and negitive diabetes for each patient
+##
+
