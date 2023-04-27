@@ -79,3 +79,12 @@ pred = SV_model.predict(Xtest)
 
 print(confusion_matrix(Ytest, pred))
 print(accuracy_score(Ytest, pred))
+
+from sklearn.linear_model import LogisticRegression
+LR = LogisticRegression(random_state=0, solver='lbfgs', class_weight='balanced', fit_intercept=True)
+LR.fit(Xtrain, Ytrain)
+pred = LR.predict(Xtest)
+
+print(confusion_matrix(Ytest, pred))
+print(accuracy_score(Ytest, pred))
+
