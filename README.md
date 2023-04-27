@@ -17,11 +17,13 @@
 ## KNN Classifier
 ### this model has 0.68 accuracy
 ## DecisionTreeClassifier
-###  this model has 0.74 accuracy  (the best one)
+###  this model has 0.74 accuracy 
 ### in line 55 I used predict_proba to see the probability of both positive Diabetes and negitive diabetes for each patient
 ## in line I used graphviz for picturing the tree
 ## neural network (MLPClassifier)
 ### this classifier has 0.68
 ##svc 
 ### this classifiers has  0.71
+## logestic regression classifier
+### with 0.97 accuracy score is the best one in this occasion 
 
