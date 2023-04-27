@@ -27,3 +27,7 @@
 ## logestic regression classifier
 ### with 0.73 accuracy score  
 
+# K_Fold Validation
+## in this python file I used K_fold validation instead of split data for separating training and test datas
+## the result for each classifier and the results was considerablly better
+
