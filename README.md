@@ -25,5 +25,5 @@
 ##svc 
 ### this classifiers has  0.71
 ## logestic regression classifier
-### with 0.73 accuracy score is the best one in this occasion 
+### with 0.73 accuracy score  
 
