@@ -22,7 +22,7 @@
 ## in line I used graphviz for picturing the tree
 ## neural network (MLPClassifier)
 ### this classifier has 0.68
-##svc 
+## svc 
 ### this classifiers has  0.71
 ## logestic regression classifier
 ### with 0.73 accuracy score  
